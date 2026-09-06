@@ -1,0 +1,28 @@
+.styled-table {
+  border: 4px solid #000;
+  width: 600px;
+  height: 600px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.styled-table tr{
+  height: 20px;
+}
+
+.styled-table td {
+  border: 6px solid #000;
+}
+
+.yellow_cell{
+  background-color: yellow;
+}
+.red_cell {
+  background-color: red;
+}
+.blue_cell {
+  background-color: blue;
+}
+.black_cell {
+  background-color: black;
+}
