@@ -1,28 +1,130 @@
-.styled-table {
-  border: 4px solid #000;
-  width: 600px;
-  height: 600px;
-  table-layout: fixed;
-  border-collapse: collapse;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  /* font-size: 16px; */
+  color: black;
+}
+.content{
+  background-color: rgb(234, 227, 218);
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  background-color: rgb(219, 193, 162);
+  padding: 12px;
+  margin-bottom: 26px;
+}
+.head{
+  border: 2px solid rgb(82, 56, 31);
+  padding: 6px;
+  border-radius: 14px;
+}
+span{
+  color: rgb(82, 56, 31);
+  font-weight: 800;
+}
+h1{
+  /* margin: 20px; */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+h2{
+  margin: 20px;
+}
+p{
+  margin: 20px;
+  font-size: 18px;
+}
+strong{
+  color: rgb(82, 56, 31);;
+}
+.list{
+  margin: 20px;
+  font-size: 18px;
+}
+li{
+  margin-bottom: 12px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgb(219, 193, 162);
 }
 
-.styled-table tr{
-  height: 20px;
+
+
+.text_inline{
+  display: inline;
+}
+.text_inline-block {
+  display: inline-block;
+  width: 300px;
+  padding: 24px;
+}
+.text_flex{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border: 2px solid rgb(82, 56, 31);
+  box-sizing: content-box;
+  padding: 12px
+}
+.text_block{
+  width: 280px;
+  border: 2px solid rgb(82, 56, 31);
+  box-sizing: border-box;
+  padding: 12px
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin: 20px;
 }
 
-.styled-table td {
-  border: 6px solid #000;
+
+.container{
+  background-color: rgb(219, 193, 162);
+  border: 2px solid rgb(82, 56, 31);
+  border-radius: 12px;
+  padding: 14px;
+  width: 220px;
+  height: 126px;
+  overflow: auto;
+}
+.scroll{
+  overflow: scroll;
+}
+.hidden{
+  overflow: hidden;
 }
 
-.yellow_cell{
-  background-color: yellow;
+
+.pos_sticky{
+  margin-top: 6px;
+  position: sticky;
+  top: 0px;
 }
-.red_cell {
-  background-color: red;
+.pos_absolute{
+  position: absolute;
+  left: 400px;
+  top: 60px;
 }
-.blue_cell {
-  background-color: blue;
+.pos_fixed{
+  position: fixed;
+  left: 800px;
+  bottom: 200px;
 }
-.black_cell {
-  background-color: black;
+.pos_relative{
+  position: relative;
+  left: 400px;
+}
+.foot{
+  margin-top: 140px;
 }
