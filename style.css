@@ -1,130 +1,68 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  /* font-size: 16px; */
-  color: black;
-}
+} */
+
 .content{
-  background-color: rgb(234, 227, 218);
-}
-.navigation{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  background-color: rgb(219, 193, 162);
-  padding: 12px;
-  margin-bottom: 26px;
-}
-.head{
-  border: 2px solid rgb(82, 56, 31);
-  padding: 6px;
-  border-radius: 14px;
-}
-span{
-  color: rgb(82, 56, 31);
-  font-weight: 800;
-}
-h1{
-  /* margin: 20px; */
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-h2{
-  margin: 20px;
-}
-p{
-  margin: 20px;
-  font-size: 18px;
-}
-strong{
-  color: rgb(82, 56, 31);;
-}
-.list{
-  margin: 20px;
-  font-size: 18px;
-}
-li{
-  margin-bottom: 12px;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  padding: 20px;
-  background-color: rgb(219, 193, 162);
-}
-
-
-
-.text_inline{
-  display: inline;
-}
-.text_inline-block {
-  display: inline-block;
-  width: 300px;
-  padding: 24px;
-}
-.text_flex{
   display: flex;
   flex-direction: column;
-  width: 280px;
-  border: 2px solid rgb(82, 56, 31);
-  box-sizing: content-box;
-  padding: 12px
+  gap: 40px;
 }
-.text_block{
-  width: 280px;
-  border: 2px solid rgb(82, 56, 31);
-  box-sizing: border-box;
-  padding: 12px
+.items__style {
+  border: 1px solid rgb(61, 25, 94);
+  background-color: rgb(201, 161, 238);
+  padding: 20px 60px;
+  /* margin: 10px; */
 }
-.box{
+.block1 {
   display: flex;
-  flex-direction: row;
-  gap: 48px;
-  margin: 20px;
+  justify-content: space-between;
 }
 
-
-.container{
-  background-color: rgb(219, 193, 162);
-  border: 2px solid rgb(82, 56, 31);
-  border-radius: 12px;
-  padding: 14px;
-  width: 220px;
-  height: 126px;
-  overflow: auto;
+.block2 {
+  display: flex;
+  justify-content: space-between;
 }
-.scroll{
-  overflow: scroll;
-}
-.hidden{
-  overflow: hidden;
+.block2_end{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
 
+.block3 {
+  display: flex;
+  justify-content: space-between; 
+}
+.block3_start{
+  display: flex;
+  gap: 20px;
+}
+.block3_end {
+  display: flex;
+  gap: 20px;
+}
 
-.pos_sticky{
-  margin-top: 6px;
-  position: sticky;
-  top: 0px;
+.block4 {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
-.pos_absolute{
-  position: absolute;
-  left: 400px;
-  top: 60px;
+.block4__end{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.pos_fixed{
-  position: fixed;
-  left: 800px;
-  bottom: 200px;
+
+.block5 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-.pos_relative{
-  position: relative;
-  left: 400px;
+.block5__end {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.foot{
-  margin-top: 140px;
+.block5__items{
+padding-left: 120px;
 }
