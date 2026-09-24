@@ -353,3 +353,12 @@
     font-size: 8px;
   }
 }
+
+@media (max-width: 420px) {
+  .menu {
+    gap: 24px;
+  }
+  .section4__video > img {
+    width: 368px;
+  }
+}
