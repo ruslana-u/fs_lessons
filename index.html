@@ -3,49 +3,429 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 13</title>
+    <title>Lesson 14</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <svg width="200" height="200" viewBox="-10 -10 200 200">
-      <rect
-        class="anim"
-        width="100"
-        height="100"
-        fill="coral"
-        stroke="brown"
-        stroke-width="5"
-      ></rect>
-    </svg>
-    <svg width="200" height="200" viewBox="-20 -40 200 200">
-      <rect
-        width="150"
-        height="50"
-        fill="pink"
-        stroke="palevioletred"
-        stroke-width="5"
-      ></rect>
-    </svg>
-    <svg width="200" height="200">
-      <circle
-        cx="100"
-        cy="50"
-        r="45"
-        fill="lightblue"
-        stroke="royalblue"
-        stroke-width="5"
-      ></circle>
-    </svg>
-    <svg width="200" height="200">
-      <ellipse
-        cx="100"
-        cy="150"
-        rx="80"
-        ry="30"
-        fill="lightgreen"
-        stroke="green"
-        stroke-width="5"
-      ></ellipse>
-    </svg>
+    <div class="content">
+      <header>
+        <nav class="p-3 mb-3 navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand pe-4" href="#">
+              <img
+                src="./images/logo_cat.jpg"
+                alt="Logo"
+                width="35"
+                height="40"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active ps-4 pe-4"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-4 pe-4" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle ps-4 pe-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid mb-3">
+        <div class="row main">
+          <div class="col left">
+            <form>
+              <div class="mb-3 mt-3 col-auto">
+                <label for="inputName" class="form-label text__colour"
+                  >Ім'я</label
+                >
+                <input type="text" class="form-control" id="inputName" />
+              </div>
+              <div class="mb-3 col-auto">
+                <label for="exampleInputEmail1" class="form-label text__colour"
+                  >Email адреса</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text text__colour">
+                  Ми ніколи нікому не передамо вашу електронну адресу
+                </div>
+              </div>
+              <div class="mb-3 col-auto">
+                <label for="inputPassword6" class="col-form-label text__colour"
+                  >Пароль</label
+                >
+                <input
+                  type="password"
+                  id="inputPassword6"
+                  class="form-control"
+                  aria-describedby="passwordHelpInline"
+                />
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text text__colour">
+                    Має містити від 8 до 20 символів
+                  </span>
+                </div>
+              </div>
+              <div class="mb-3 col-auto">
+                <label for="inputCity" class="form-label text__colour"
+                  >Місто</label
+                >
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="mb-3 col-auto">
+                <label for="inputStreet" class="form-label text__colour"
+                  >Вулиця</label
+                >
+                <select id="inputStreet" class="form-select">
+                  <option selected>Обрати...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label text__colour" for="exampleCheck1"
+                  >Перевірка</label
+                >
+              </div>
+              <button type="submit" class="mb-3 btn btn-primary">
+                Надіслати
+              </button>
+              <button type="reset" class="mb-3 btn btn-primary">
+                Очистити
+              </button>
+            </form>
+          </div>
+          <div class="col-6 center">
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button accordion__colour"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Коти проводять 70% свого життя уві сні
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Якщо ви думаєте, що коти проводять багато свого життя уві
+                    сні, ви маєте рацію. Коти витрачають на сон 70% свого життя,
+                    тобто приблизно 13-16 годин на добу. Інший час – вони їдять.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed accordion__colour"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Кіт був мером міста на Алясці протягом 20 років
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Помаранчевий смугастий кіт Стаббс був мером Талкітна,
+                    маленького містечка на Алясці протягом 20 років! У нього
+                    було кілька безальтернативних виборів, і хоча він не мав
+                    законодавчої влади, його любили як місцеві жителі, так і
+                    туристи.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed accordion__colour"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Рекорд найдовшого кота в історії становить 123 см
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Домашні кішки зазвичай вважаються досить маленькими й
+                    вишуканими істотами. Але чи знаєте ви найдовший кіт у світі
+                    Мейн-куна звали Стьюї, а його довжина становила 123 см.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed accordion__colour"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Найбагатший кіт у світі мав 7 мільйонів
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Найбагатший кіт у світі за версією Книги рекордів Гіннеса –
+                    це Блекі. Коли його власник-мільйонер помер, він відмовився
+                    визнати свою сім’ю у своєму заповіті й натомість віддав свій
+                    статок у 7 мільйонів фунтів стерлінгів Блекі!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed accordion__colour"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    У 1963 році кіт полетів у космос
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Ви чули про мавп і собак у космосі, але чи знаєте ви, що кіт
+                    теж там був? 18 жовтня 1963 року Фелісетт, також відома як
+                    «Астрокіт», була першим і єдиним котом, який побував у
+                    космосі.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col right">
+            <div id="carouselExample" class="carousel slide mt-3">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/cat1.jpg"
+                    class="d-block w-100"
+                    alt="Cat1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/cat2.jpg"
+                    class="d-block w-100"
+                    alt="Cat2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/cat3.jpg"
+                    class="d-block w-100"
+                    alt="Cat3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/cat4.jpg"
+                    class="d-block w-100"
+                    alt="Cat4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/cat5.jpg"
+                    class="d-block w-100"
+                    alt="Cat5"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <nav class="p-3 navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand pe-4" href="#">
+              <img
+                src="./images/logo_cat.jpg"
+                alt="Logo"
+                width="35"
+                height="40"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active ps-4 pe-4"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-4 pe-4" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle ps-4 pe-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

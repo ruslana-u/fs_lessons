@@ -1,26 +1,35 @@
-svg {
-  border: 3px solid black;
-} 
-@keyframes rect{
-  0% {
-    fill: coral;
-    stroke: brown;
+.left{
+  background-color: rgba(205, 140, 182, 0.772);
+}
+.center {
+  background-color: rgba(205, 140, 182, 0.772);
+}
+.right {
+  background-color: rgba(205, 140, 182, 0.772);
+}
+.main{
+  display: flex;
+  gap: 20px;
+}
+.content{
+  background-color: rgb(250, 181, 221);
+}
+.text__colour{
+  color: rgb(65, 3, 24);
+}
+
+.accordion-button:not(.collapsed).accordion__colour {
+  background-color: rgb(250, 181, 221);
+  color: rgb(65, 3, 24);
+}
+
+@media (min-width: 576px) {
+  .main{
+    flex-direction: column;
   }
-  50% {
-    fill: gold;
-    stroke: red;
+}
+@media (min-width: 992px) {
+  .main {
+    flex-direction: row;
   }
-  100% {
-    fill: brown;
-    stroke: coral;
-  }
-}  
-.anim{
-  animation-name: rect;
-  animation-duration: 8s;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
