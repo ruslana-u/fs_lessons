@@ -5,50 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Site</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..500&display=swap"
+    />
     <style type="text/tailwindcss">
       @theme {
-        /* --color-clifford: #da373d; */
-        --color-gray: #EEEFF1;
+        --color-gray: #eeeff1;
         --color-black: #000;
-        --color-blue: #34547A;
+        --color-blue: #34547a;
         --color-dark-gray: #727272;
-        --color-white: #F9F9F9;
+        --color-white: #f9f9f9;
       }
     </style>
   </head>
   <body>
-    <div class="section1 container bg-gray">
-      <menu class="section1__menu menu">
-        <li class="menu__item active text-blue">HOME</li>
-        <li class="menu__item text-black">ABOUT</li>
-        <li class="menu__item text-black">WORKS</li>
-        <li class="menu__item text-black">PROCESS</li>
-        <li class="menu__item text-black">CONTACTS</li>
+    <div class="px-100 p-20 bg-gray">
+      <menu class="flex items-center gap-12">
+        <li
+          class="font-['Roboto'] text-[16px] font-medium tracking-[1.6px] text-blue"
+        >
+          HOME
+        </li>
+        <li
+          class="font-['Roboto'] text-[16px] font-normal tracking-[1.6px] text-black"
+        >
+          ABOUT
+        </li>
+        <li
+          class="font-['Roboto'] text-[16px] font-normal tracking-[1.6px] text-black"
+        >
+          WORKS
+        </li>
+        <li
+          class="font-['Roboto'] text-[16px] font-normal tracking-[1.6px] text-black"
+        >
+          PROCESS
+        </li>
+        <li
+          class="font-['Roboto'] text-[16px] font-normal tracking-[1.6px] text-black"
+        >
+          CONTACTS
+        </li>
       </menu>
-      <div class="section1__main main">
-        <h1 class="main__heading text-black">Design and Layout</h1>
-        <p class="main__text text-dark-gray">
+      <div class="mt-40 mb-15 flex flex-col items-start justify-center gap-15">
+        <h1 class="font-['Roboto'] text-[48px] font-medium text-black">
+          Design and Layout
+        </h1>
+        <p
+          class="font-['Roboto'] text-[16px] font-normal leading-[164.063%] w-[75%] text-dark-gray"
+        >
           Lorem Ipsum is a placeholder text commonly used in printing and web
           design. Lorem Ipsum has been the standard dummy text for Latin scripts
           since the 16th century.
         </p>
-        <button class="main__btn bg-blue text-white">WRITE TO ME</button>
+        <button
+          class="py-6.25 px-13 font-['Roboto'] text-[16px] font-normal tracking-[1.6px] bg-blue text-white"
+        >
+          WRITE TO ME
+        </button>
       </div>
     </div>
 
-    <div class="section2 container">
-      <h2 class="section2__heading">About Me</h2>
-      <p class="section2__text">
+    <div
+      class="px-100 p-27.5 bg-white flex flex-col items-center justify-center gap-6.25"
+    >
+      <h2 class="font-['Roboto'] text-[32px] font-medium text-black">
+        About Me
+      </h2>
+      <p
+        class="font-['Roboto'] text-[16px] font-normal leading-[164.063%] text-center w-[75%] text-dark-gray"
+      >
         Lorem Ipsum is a placeholder text commonly used in printing and web
         design. Lorem Ipsum has been the standard dummy text for Latin scripts
         since the 16th century.
       </p>
     </div>
 
-    <div class="section3 container">
-      <ul class="section3__list list">
-        <li class="list__item">
+    <div class="px-100 p-25 bg-blue">
+      <ul class="flex flex-row items-center justify-center gap-15">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -93,12 +129,16 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
-        <li class="list__item">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -143,12 +183,16 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
-        <li class="list__item">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -193,12 +237,16 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
-        <li class="list__item">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -243,12 +291,16 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
-        <li class="list__item">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -293,12 +345,16 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
-        <li class="list__item">
+        <li class="flex items-center justify-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -343,24 +399,35 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="list__item__block">
-            <span>40+</span>
-            <span>projects</span>
+          <div class="flex flex-col items-start gap-2.5">
+            <span class="font-['Roboto'] text-[21px] font-medium text-white"
+              >40+</span
+            >
+            <span class="font-['Roboto'] text-[16px] font-normal text-white"
+              >projects</span
+            >
           </div>
         </li>
       </ul>
     </div>
 
-    <div class="section4 container">
-      <h2 class="section4__heading">How I Work</h2>
-      <p class="section4__text">
+    <div
+      class="px-100 p-25 bg-gray flex flex-col items-center justify-center gap-12.5"
+    >
+      <h2 class="font-['Roboto'] text-[32px] font-medium text-black">
+        How I Work
+      </h2>
+      <p
+        class="font-['Roboto'] text-[16px] font-normal leading-[164.063%] text-center w-[75%] text-dark-gray"
+      >
         Lorem Ipsum is a placeholder text commonly used in printing and web
         design. Lorem Ipsum has been the standard dummy text for Latin scripts
         since the 16th century.
       </p>
-      <div class="section4__video">
-        <img src="./images/video.png" alt="Video" />
+      <div class="relative">
+        <img class="w-183" src="./images/video.png" alt="Video" />
         <svg
+          class="absolute top-[41%] left-[46%] w-16.25 height-16.25"
           xmlns="http://www.w3.org/2000/svg"
           width="100"
           height="100"
@@ -382,9 +449,15 @@
       </div>
     </div>
 
-    <div class="section5 container">
-      <span class="section5__text1">Ostap Ivanenko</span>
-      <span class="section5__text2">© 2018. All rights reserved.</span>
+    <div
+      class="px-100 p-12.5 bg-blue flex flex-col items-start justify-center gap-5"
+    >
+      <span class="font-['Roboto'] text-[21px] font-medium text-white"
+        >Ostap Ivanenko</span
+      >
+      <span class="font-['Roboto'] text-[13px] font-normal text-white"
+        >© 2018. All rights reserved.</span
+      >
     </div>
   </body>
 </html>
