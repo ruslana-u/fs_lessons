@@ -75,13 +75,13 @@
             </clipPath>
           </defs>
         </svg>
-        <menu class="flex justify-between items-start gap-x-12.5">
-          <li class="pt-2 pb-6.25 border-b-[3px] border-brand-green font-cera text-[16px] font-bold text-brand-black">Home</li>
-          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black">Shop</li>
-          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black">Plant Care</li>
-          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black">Blogs</li>
+        <menu class="flex justify-between items-start gap-x-12.5 md:gap-x-4">
+          <li class="pt-2 pb-6.25 border-b-[3px] border-brand-green font-cera text-[16px] font-bold text-brand-black md:pb-16 lg:pb-6.25">Home</li>
+          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black md:pb-16 lg:pb-6.25">Shop</li>
+          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black md:pb-16 lg:pb-6.25">Plant Care</li>
+          <li class="pt-2 pb-6.25 font-cera text-[16px] font-normal text-brand-black md:pb-16 lg:pb-6.25">Blogs</li>
         </menu>
-        <div class="flex justify-between items-center gap-x-7.5">
+        <div class="flex justify-between items-center gap-x-7.5 md:gap-y-2 md:flex-col lg:flex-row">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z" fill="#3D3D3D"/>
         </svg>
@@ -104,23 +104,23 @@
         </button>
         </div>
       </header>
-      <section class="flex bg-brand-section-gray mb-11.5">
-        <div class="px-10 pt-14 pb-22.5 flex flex-col items-start gap-y-1.25">
+      <section class="flex bg-brand-section-gray mb-11.5 md:flex-col md:h-auto">
+        <div class="px-10 pt-14 pb-22.5 flex flex-col items-start gap-y-1.25 md:items-center md:pb-10">
           <span class="text-brand-black font-cera font-medium text-sm/4 tracking-[1.4px] uppercase">Welcome to GreenShop</span>
-          <h1 class="text-brand-black font-cera text-[70px]/17.5 font-black uppercase">
+          <h1 class="text-brand-black font-cera text-[70px]/17.5 font-black uppercase md:text-center">
             Let’s Make a Better
             <span class="text-brand-green">Planet</span>
           </h1>
           <p class="text-brand-lightgray font-cera font-normal text-sm/6 max-w-[82%]">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
           <button class="bg-brand-green text-brand-white font-cera px-7 py-3 rounded-md text-base/5 font-bold mt-10">SHOP NOW</button>
         </div>
-        <!-- <div class="relative">
+        <div class="relative lg:flex lg:justify-center">
           <img class="min-w-125" src="./images/big_plant.png" alt="Big plant">
-          <img class="absolute left-11.5 bottom-9" src="./images/small_plant.png" alt="Small plant">
-        </div> -->
-        <div class="min-w-125 bg-[url(./images/big_plant.png),url(./images/small_plant.png)] bg-position-[right_bottom,left_2rem_bottom_2.25rem] bg-no-repeat"></div>
+          <img class="absolute left-11.5 bottom-9 lg:left-42" src="./images/small_plant.png" alt="Small plant">
+        </div>
+        <!-- <div class="min-w-125 bg-[url(./images/big_plant.png),url(./images/small_plant.png)] bg-position-[right_bottom,left_2rem_bottom_2.25rem] bg-no-repeat"></div> -->
       </section>
-    <section class="flex gap-x-12.5 mb-36.5">
+    <section class="flex gap-x-12.5 mb-36.5 md:gap-x-6">
     <div>
       <div class="px-4.5 py-3.5 bg-brand-fb">
         <h3 class="text-brand-black font-cera font-bold text-lg/4">Categories</h3>
@@ -190,13 +190,13 @@
       <img src="./images/Super_Sale_Banner.png" alt="Sale banner">
     </div>
     <div class="flex-1">
-      <div class="flex justify-between items-start mb-7.5">
-        <ul class="flex justify-center gap-x-10">
+      <div class="flex justify-between items-start mb-7.5 md:flex-col lg:flex-row">
+        <ul class="flex justify-center gap-x-10 md:gap-x-4 md:mb-4 lg:mb-0">
           <li class="pb-2 text-brand-green font-cera font-bold text-[15px]/4 border-b-[2px] border-brand-green">All Plants</li>
           <li class="text-brand-black font-cera font-nirmal text-[15px]/4">New Arrivals</li>
           <li class="text-brand-black font-cera font-nirmal text-[15px]/4">Sale</li>
         </ul>
-        <div class="flex justify-center gap-x-2 items-center">
+        <div class="flex justify-center gap-x-2 items-center lg:items-start">
         <span class="text-brand-black font-cera font-nirmal text-[15px]/4">Short by:</span>
         <span class="text-brand-black font-cera font-nirmal text-[15px]/4">Default sorting</span>
         <span>
@@ -208,7 +208,7 @@
         </span>
         </div>
       </div>
-      <div class="flex flex-wrap gap-x-8.25 gap-y-17.5 justify-center mb-22.5">
+      <div class="flex flex-wrap gap-x-8.25 gap-y-17.5 justify-center mb-22.5 md:gap-y-6 md:mb-16">
         <div class="flex flex-col gap-y-1.5 items-start group/card border-t border-transparent hover:border-brand-green">
           <div class="bg-brand-fb px-1 py-6.25 relative">
             <img class="w-62.5" src="./images/plant1.png" alt="Plant1">
@@ -612,7 +612,7 @@
           <span class="text-brand-green font-cera text-lg/4 font-bold">$39.00</span>
         </div>
       </div>
-      <div class="flex justify-end">
+      <div class="flex justify-end md:justify-center">
         <ul class="flex gap-x-2.5">
           <li>
             <button class="text-lg/4 bg-brand-green text-brand-white px-3 py-2 border border-brand-btn-gray rounded-sm">1</button>
@@ -637,7 +637,7 @@
       </div>
     </div>
     </section>
-    <section class="flex justify-center gap-x-12.5 mb-34.5">
+    <section class="flex justify-center gap-x-12.5 mb-34.5 md:flex-col md:gap-y-6">
       <div class="relative pr-8.75 pt-9.25 pb-11.5 pl-66 bg-brand-fb flex flex-col items-end gap-y-2">
         <img class="w-72.25 absolute bottom-2 left-0" src="./images/plant5.png" alt="Plant5">
         <h3 class="max-w-40 font-cera text-right text-brand-black font-black text-lg/6 uppercase">Summer cactus & succulents</h3>
@@ -666,13 +666,13 @@
     <section class="flex flex-col gap-y-4 items-center mb-25">
       <h2 class="font-cera text-brand-black text-3xl/4 font-bold">Our Blog Posts</h2>
       <span class="font-cera text-brand-lightgray text-sm/6 mb-5">We are an online plant shop offering a wide range of cheap and trendy plants.</span>
-      <div class="flex gap-x-11">
-        <div class="flex flex-col max-w-67">
-          <img class="w-67" src="./images/post_plant1.png" alt="Plants">
-          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb">
+      <div class="flex gap-x-11 md:max-w-100 md:flex-wrap md:gap-y-11 md:justify-center lg:flex-nowrap lg:max-w-196">
+        <div class="flex flex-col max-w-67 md:max-w-35 lg:max-w-40.5">
+          <img class="w-67 md:w-35 lg:w-40.5" src="./images/post_plant1.png" alt="Plants">
+          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb md:h-full">
             <span class="font-cera text-brand-green font-medium text-sm/4">September 12 I Read in 6 minutes</span>
             <h4 class="font-cera text-brand-black text-xl/6.5 font-bold max-w-47.5">Cactus & Succulent Care Tips</h4>
-            <p class="font-cera text-brand-lightgray text-sm/5.5">Cacti are succulents are easy care plants for any home or patio.</p>
+            <p class="font-cera text-brand-lightgray text-sm/5.5 md:flex-1">Cacti are succulents are easy care plants for any home or patio.</p>
             <div class="flex items-end gap-x-1 group/read cursor-pointer">
               <span class="font-cera text-brand-black text-sm/4 font-medium group-hover/read:text-brand-green">Read More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -682,12 +682,12 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col max-w-67">
-          <img class="w-67" src="./images/post_plant2.png" alt="Plants">
-          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb">
+        <div class="flex flex-col max-w-67 md:max-w-35 lg:max-w-40.5">
+          <img class="w-67 md:w-35 lg:w-40.5" src="./images/post_plant2.png" alt="Plants">
+          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb md:h-full">
             <span class="font-cera text-brand-green font-medium text-sm/4">September 13 I Read in 2 minutes</span>
             <h4 class="font-cera text-brand-black text-xl/6.5 font-bold max-w-47.5">Top 10 Succulents for Your Home</h4>
-            <p class="font-cera text-brand-lightgray text-sm/5.5">Best in hanging baskets. Prefers medium to high light.</p>
+            <p class="font-cera text-brand-lightgray text-sm/5.5 md:flex-1">Best in hanging baskets. Prefers medium to high light.</p>
             <div class="flex items-end gap-x-1 group/read cursor-pointer">
               <span class="font-cera text-brand-black text-sm/4 font-medium group-hover/read:text-brand-green">Read More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -697,12 +697,12 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col max-w-67">
-          <img class="w-67" src="./images/post_plant3.png" alt="Plants">
-          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb">
+        <div class="flex flex-col max-w-67 md:max-w-35 lg:max-w-40.5">
+          <img class="w-67 md:w-35 lg:w-40.5" src="./images/post_plant3.png" alt="Plants">
+          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb md:h-full">
             <span class="font-cera text-brand-green font-medium text-sm/4">September 15 I Read in 3 minutes</span>
             <h4 class="font-cera text-brand-black text-xl/6.5 font-bold max-w-47.5">Cacti & Succulent Care Tips</h4>
-            <p class="font-cera text-brand-lightgray text-sm/5.5">Cacti and succulents thrive in containers and because most are..</p>
+            <p class="font-cera text-brand-lightgray text-sm/5.5 md:flex-1">Cacti and succulents thrive in containers and because most are..</p>
             <div class="flex items-end gap-x-1 group/read cursor-pointer">
               <span class="font-cera text-brand-black text-sm/4 font-medium group-hover/read:text-brand-green">Read More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -712,12 +712,12 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col max-w-67">
-          <img class="w-67" src="./images/post_plant4.png" alt="Plants">
-          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb">
+        <div class="flex flex-col max-w-67 md:max-w-35 lg:max-w-40.5">
+          <img class="w-67 md:w-35 lg:w-40.5" src="./images/post_plant4.png" alt="Plants">
+          <div class="flex flex-col items-start pt-2 px-3 pb-3 gap-y-1 bg-brand-fb md:h-full">
             <span class="font-cera text-brand-green font-medium text-sm/4">September 15 I Read in 2 minutes</span>
             <h4 class="font-cera text-brand-black text-xl/6.5 font-bold max-w-47.5">Best Houseplants Room by Room</h4>
-            <p class="font-cera text-brand-lightgray text-sm/5.5">The benefits of houseplants are endless. In addition to..</p>
+            <p class="font-cera text-brand-lightgray text-sm/5.5 md:flex-1">The benefits of houseplants are endless. In addition to..</p>
             <div class="flex items-end gap-x-1 group/read cursor-pointer">
               <span class="font-cera text-brand-black text-sm/4 font-medium group-hover/read:text-brand-green">Read More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -729,8 +729,8 @@
         </div>
       </div>
     </section>
-    <section class="bg-brand-fb px-6.5 py-6 flex justify-between">
-        <ul class="flex items-center gap-x-7">
+    <section class="bg-brand-fb px-6.5 py-6 flex justify-between md:flex-wrap md:justify-center">
+        <ul class="flex items-center gap-x-7 lg:gap-x-2">
           <li class="flex items-start flex-col gap-y-2 ml-2">
             <svg width="77" height="95" viewBox="0 0 77 95" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="37" cy="58" r="37" fill="#46A358" fill-opacity="0.13"/>
@@ -1041,7 +1041,7 @@
           </li>
         </ul>
       <div class="flex flex-col max-w-88.5 gap-y-4.5">
-        <span class="font-cera text-brand-black text-lg/4 font-bold mt-4">Would you like to join newsletters?</span>
+        <span class="font-cera text-brand-black text-lg/4 font-bold mt-4 md:mt-6">Would you like to join newsletters?</span>
         <div class="flex shadow-custom rounded-md">
           <input class="p-3 bg-brand-white text-sm/4 text-brand-ac flex-1 rounded-s-md" type="text" placeholder="enter your email address...">
           <button class="bg-brand-green py-3 px-6 font-cera text-brand-white font-bold txt-lg/4 rounded-e-md">Join</button>
@@ -1049,7 +1049,7 @@
         <p class="font-cera text-brand-lightgray text-sm/5.5">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</p>
       </div>
     </section>
-    <section class="py-7 px-6 flex bg-brand-green10 gap-x-19 items-center border-b-[1px] border-t-[1px] border-brand-green-20">
+    <section class="py-7 px-6 flex bg-brand-green10 gap-x-19 items-center border-b-[1px] border-t-[1px] border-brand-green-20 md:flex-col md:gap-y-4">
       <svg xmlns="http://www.w3.org/2000/svg" width="150" height="35" viewBox="0 0 150 35" fill="none">
         <g clip-path="url(#clip0_1_797)">
           <path d="M17.15 0C7.67748 0 0 7.67746 0 17.15C0 26.0201 6.73548 33.3175 15.3711 34.207C14.8496 29.9134 15.0436 26.4001 15.7067 23.5135C15.3347 21.7225 14.4898 19.0703 12.5734 17.1864C12.5734 17.1864 13.8348 19.0784 14.5181 21.6214C14.5181 21.6255 14.5221 21.6295 14.5221 21.6335C14.5949 21.9044 14.6596 22.1793 14.7162 22.4623C14.7283 22.527 14.7404 22.5917 14.7526 22.6604C14.8051 22.9515 14.8536 23.2426 14.886 23.5418C5.19513 22.3532 3.12921 13.6569 3.35561 10.3781C13.665 10.9482 15.7754 17.8292 16.0827 22.0985C19.4585 11.0412 30.1843 10.4024 31.0697 10.3781C31.4538 18.8763 25.1509 25.5026 17.6149 26.0807C17.6635 25.8503 17.7201 25.6198 17.7767 25.3934C17.7928 25.3247 17.813 25.26 17.8333 25.1913C17.8777 25.0296 17.9222 24.8679 17.9748 24.7061C17.995 24.6374 18.0192 24.5646 18.0394 24.4959C18.096 24.318 18.1567 24.1442 18.2173 23.9663C18.2335 23.9259 18.2456 23.8854 18.2618 23.845C18.3386 23.6348 18.4195 23.4326 18.5003 23.2305C18.5084 23.2143 18.5125 23.1941 18.5205 23.1779C18.5205 23.1779 18.5205 23.1779 18.5246 23.1779C20.4571 18.5043 24.0229 15.4439 24.0229 15.4439C17.0247 19.4868 15.8441 29.9983 15.6582 34.2231C16.1514 34.2676 16.6446 34.2999 17.15 34.2999C26.6225 34.2999 34.3 26.6225 34.3 17.15C34.3 7.67746 26.6225 0 17.15 0Z" fill="#46A358"/>
@@ -1095,7 +1095,7 @@
         <a href="tel:+8801911717490" class="font-cera text-brand-black text-sm/5.5">+88 01911 717 490</a>
       </div>
     </section>
-    <section class="flex gap-x-40 px-6 py-8 bg-brand-fb border-b-[1px] border-brand-green-20">
+    <section class="flex gap-x-40 px-6 py-8 bg-brand-fb border-b-[1px] border-brand-green-20 md:flex-wrap md:gap-y-4 lg:gap-x-20 lg:flex-nowrap">
       <div>
         <span class="font-cera text-brand-black text-lg/4 font-bold mb-2">My Account</span>
         <ul>
